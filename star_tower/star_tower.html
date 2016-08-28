@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Exercises</title>
+
+
+        <script>
+            function Button1_onclick() {
+                var value = "";
+                for (let j = 1; j < 5; j++) {  //層數
+                    for (let i = 1; i <= j; i++) {//星星數量
+                     
+                        value += "*";
+                        document.write(value + "<br/>")
+                    }
+
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+
+        <input  type="button" id="Button1" name="Button1"
+               value="星星" onclick="Button1_onclick()">
+
+        <div id="debug"></div>
+    </body>
+</html>
+
